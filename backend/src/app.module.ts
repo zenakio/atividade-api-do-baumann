@@ -6,10 +6,11 @@ import { AreaController } from './area/area.controller';
 import { VelocidadeController } from './velocidade/velocidade.controller';
 import { MassaController } from './massa/massa.controller';
 import { TemperaturaController } from './temperatura/temperatura.controller';
+import { ConversorService } from './conversor/conversor.service';
 
 @Module({
   imports: [],
   controllers: [AppController, ComprimentoController, AreaController, VelocidadeController, MassaController, TemperaturaController],
-  providers: [AppService],
+  providers: [AppService, ConversorService],
 })
 export class AppModule {}
